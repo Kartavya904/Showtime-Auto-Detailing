@@ -5,195 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Ja5BEK4lb58/XR4j9HlAX+VP2v7q9sD6Or2bSBHzbrN7Bn5HsCJuGdoytUJ3J6g23v7P5oM5ZW4VWg8hD2SzHw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Showtime Auto Detailing</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Helvetica, Arial, sans-serif;
-            background-color: #0A1720;
-            color: #ffffff;
-        }
-        #header {
-            background-color: #132A32;
-            color: #ffffff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
-            height:auto;
-        }
-        #logo {
-            width: 150px;
-            height: auto;
-        }
-        #menu {
-            display: flex;
-            list-style: none;
-            font-size: x-large;
-        }
-        #menu a {
-            color: #55ACEE;
-            text-decoration: none;
-            margin-right: 10px;
-            margin-left: 10px;
-        }
-        #menu a:hover {
-            text-decoration: underline;
-            color: #ffffff;
-        }
-        #contact-button {
-            background-color: #55ACEE;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        #contact-button:hover {
-            background-color: #1E88E5;
-        }
-        #page {
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        #title {
-            text-align: center;
-            color: #55ACEE;
-        }
-        #home {
-            padding-top: 135px;
-        }
-        #services {
-            padding-top: 135px;
-        }
-        #gallery {
-            padding-top: 135px;
-        }
-        #footer {
-            background-color: #132A32;
-            color: #ffffff;
-            align-items: center;
-        }
-        #top-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #132A32;
-            color: #ffffff;
-            padding: 10px;
-            text-align: center;
-        }
-        #logo-footer {
-            width: 250px;
-            height: auto;
-        }
-        #socials {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-right: 10px;
-        }
-        #socials a {
-            color: #ffffff;
-            text-decoration: none;
-            margin-right: 10px;
-        }
-        #socials img {
-            width: 75px;
-            height: auto;
-        }
-        #office-hours {
-            margin-top: 20px;
-        }
-        table {
-            width: 100%;
-            color: #55ACEE;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 5px;
-            text-align: left;
-        }
-        .day {
-            font-weight: bold;
-        }
-        .time {
-            text-align: right;
-        }
-        #bottom-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #132A32;
-            color: #ffffff;
-            padding: 10px;
-            text-align: center;
-        }
-        #footer-data {
-            text-align: center;
-            color: #55ACEE;
-        }
-        #email {
-            color: #55ACEE;
-            text-decoration: none;
-        }
-        #copy {
-            background-color: #132A32;
-            color: #55ACEE;
-            text-align: center;
-            padding: 0;
-            margin:0;
-            text-decoration: none;
-        }
-    </style>
 </head>
 <body>
     <div id="header">
-        <img src="ShowtimeAutoDetailingLogo2.webp" alt="Showtime Auto Detailing Logo" id="logo">
+        <a href="#home"><img src="Media\Logo\ShowTime Auto Detailing Logo Main.jpg" alt="Showtime Auto Detailing Logo" id="logo"></a>
         <div id="menu">
             <a href="#home">Home</a>|
             <a href="#services">Services</a>|
             <a href="#gallery">Gallery</a>
         </div>
-        <a href="#contact" id="contact-button">Contact</a>
+        <a href="#bottom-footer" id="contact-button">Contact</a>
     </div>
     <div id="page">
         <div id="home">
-            <h1 id="title">Home</h1>
+            <div class="slider">
+                <div class="slides">
+                    <div id="slide1" class="slide">
+                        <div class="background" style="background-image: url('Media/Gallery/Clean_Acura.webp');"></div>
+                        <div class="text">
+                            <span class="top-text">Bringing Mobile Detailing Services In Cincinnati</span><br>
+                            <span class="bottom-text">Serving Cincinnati Since 2024</span>
+                        </div>
+                    </div>
+                    <div id="slide2" class="slide">
+                        <div class="background" style="background-image: url('Media/Gallery/Clean_Audi1.webp');"></div>
+                        <div class="text">
+                            <span class="top-text">Trusted In All of Cincinnati</span><br>
+                            <span class="bottom-text">5 Star Automobile Detailing</span>
+                        </div>
+                    </div>
+                    <div id="slide3" class="slide">
+                        <div class="background" style="background-image: url('Media/Gallery/Clean_Chevy.jpg');"></div>
+                        <div class="text">
+                            <span class="top-text">Turn Heads in Your Neighborhood</span><br>
+                            <span class="bottom-text">Experience a full transformation that will leave your car looking brand new.</span>
+                        </div>
+                    </div>
+                </div>                
+                <button class="btn prev">&#10094;</button>
+                <button class="btn next">&#10095;</button>
+            </div>
+            <div class="service-section">
+                <div class="OurServices">
+                    <h1 id="title">Our Services</h1>
+                    <a href="#services"><div class="page-image" style="background-image: url('Media/Gallery/Clean_Interior.webp');"></div></a>
+                </div>
+                <div class="Products">
+                    <h1 id="title">Product</h1>
+                    <div class="page-image" style="background-image: url('Media/Gallery/Products_Used.webp');"></div>
+                </div>
+                <div class="Areas">
+                    <h1 id="title">Areas of Service</h1>
+                    <p id="title">Cincinnati, Hyde Park, and more.<br>Contact Me For More Information</p>
+                </div>
+            </div>            
         </div>
         <div id="services">
             <h1 id="title">Services</h1>
-            <ul>
-                <li>Exterior Detailing</li>
-                <li>Interior Detailing</li>
-                <li>Engine Detailing</li>
-                <li>Headlight Restoration</li>
-                <li>Paint Correction</li>
-                <li>Paint Protection</li>
-                <li>Window Tinting</li>
-                <li>Wheel & Tire Detailing</li>
-            </ul>
-
+            <div id="Services-Provided">
+                <h2 id="title">Services Provided</h2>
+                <div class="container">
+                    <div class="container-content">
+                        <h2 id="title">EXTERIOR SERVICES</h2>
+                        <img src="Media/Gallery/Exterior_Services.webp">
+                    </div>
+                    <div class="container-content">
+                        <h3>Service Features</h3>
+                        <ul>
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                            <!-- Add more features as needed -->
+                        </ul>
+                    </div>
+                    <div class="container-content">
+                        <h3>Service Pricing</h3>
+                        <p>Pricing details go here...</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Maintainance-Details">
+                <h2 id="title">Maintainance Details</h2>
+            </div>
+            <div id="Additional-Details">
+                <h2 id="title">Additional Details</h2>
+            </div>
         </div>
         <div id="gallery">
             <h1 id="title">Gallery</h1>
-            Image 1<br>
-            Image 2<br>
-            Image 3
+            <div class="gallery">
+                <img src="Media/Gallery/Clean_Acura.webp" alt="Car 1">
+                <img src="Media/Gallery/Clean_Audi1.webp" alt="Car 2">
+                <img src="Media/Gallery/Clean_Chevy.jpg" alt="Car 3">
+                <img src="Media/Gallery/Clean_Interior.webp" alt="Car 4">
+                <img src="Media/Gallery/Products_Used.webp" alt="Car 5">
+
+            </div>            
         </div>
     </div>
     <div id="footer">
         <div id="top-footer">
             <div class="logo-footer">
-                <img src="ShowtimeAutoDetailingLogo2.webp" alt="Showtime Auto Detailing Logo" id="logo-footer">
+                <img src="Media\Logo\ShowTime Auto Detailing Logo Main.jpg" alt="Showtime Auto Detailing Logo" id="logo-footer">
             </div>
             <div id="socials">
-                <a href="https://www.facebook.com/ShowtimeAutoDetailing/" target="_blank" id="social"><img src="facebook_icon.png" alt="Facebook Icon"></a>
-                <a href="https://www.instagram.com/showtimeautodetailing/" target="_blank" id="social"><img src="instagram_icon.png" alt="Instagram Icon"></a>
-                <a href="https://www.youtube.com/channel/UCL233333333333333333" target="_blank" id="social"><img src="youtube_icon.png" alt="YouTube Icon"></a>
+                <a href="https://www.facebook.com/ShowtimeAutoDetailing/" target="_blank" id="social"><img src="Media\Socials\facebook_icon.png" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com/showtimeautodetailing/" target="_blank" id="social"><img src="Media\Socials\instagram_icon.png" alt="Instagram Icon"></a>
+                <a href="https://www.youtube.com/channel/UCL233333333333333333" target="_blank" id="social"><img src="Media\Socials\youtube_icon.png" alt="YouTube Icon"></a>
             </div>
             <div id="office-hours">
                 <h1 id="title">Office Hours</h1>
@@ -232,17 +150,342 @@
         <div id="bottom-footer">
             <div id="phone">
                 <h1 id="title">Call Me?</h1>
-                <p id="footer-data">513-967-0727</p>
+                <h3 id="footer-data">513-967-0727</h3>
             </div>
             <div id="email">
                 <h1 id="title">Email Me?</h1>
-                <p id="footer-data"><a id="email" href="mailto:michaelramsey0202@gmail.com">michaelramsey0202@gmail.com</a></p>
+                <h3 id="footer-data"><a id="email" href="mailto:michaelramsey0202@gmail.com">michaelramsey0202@gmail.com</a></h3>
             </div>
             <div id="address">
                 <h1 id="title">Reach Me?</h1>
+                <h3 id="footer-data">His House Bruh!</h3>
             </div>
         </div>
     </div>
     <p id="copy">&copy; 2024 Showtime Auto Detailing</p>
 </body>
 </html>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, Arial, sans-serif;
+        background-color: #0f1119;
+        color: #ffffff;
+    }
+    #header {
+        background-color: #1b1e2d;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height:auto;
+        z-index: 1000;
+    }
+    #logo {
+        width: 100px;
+        height: auto;
+    }
+    #menu {
+        display: flex;
+        list-style: none;
+        font-size: x-large;
+    }
+    #menu a {
+        color: #5FB5E4;
+        text-decoration: none;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    #menu a:hover {
+        text-decoration: underline;
+        color: #ffffff;
+    }
+    #contact-button {
+        background-color: #5FB5E4;
+        color: #fff;
+        padding: 10px 20px;
+        margin-right: 30px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    #contact-button:hover {
+        background-color: #1E88E5;
+    }
+    #page {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #title {
+        text-align: center;
+        color: #5FB5E4;
+    }
+    #home {
+        padding-top: 135px;
+        margin-top:-135px;
+    }
+    
+    .slider {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .slide {
+        width: 100%;
+        height: 800px; /* Adjust as per your layout */
+        align-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .background {
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        background-size: cover;
+        background-position: center;
+        filter: blur(2px); /* Apply the blur effect */
+        background-color: rgba(0, 0, 0, 0.5); /* Optional: improves readability */
+        position: absolute;
+    }
+
+    .text {
+        font-family: 'Arial Black', Gadget, sans-serif;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the text */
+        color: #5FB5E4;
+        font-size: 40px;
+        z-index: 10; /* Ensures text is above the background */
+        text-align: center;
+        padding: 10px;
+        width: calc(100% - 20px); /* Ensures padding does not push it out of bounds */
+    }
+
+    .top-text {
+        font-size: 50px;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.2); /* Optional: improves readability */
+    }
+
+    .bottom-text {
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.2); /* Optional: improves readability */
+    }
+
+    .btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 30px;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.2); /* Optional: improves readability */
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .service-section {
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    }
+
+    .page-image {
+        width: 100%;
+        height: 500px; /* Fixed height, or adjust as necessary */
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 20px;
+    }
+
+    .page-text {
+        font-size: 16px;
+        color: #666; /* Lighter text color for readability */
+        line-height: 1.6;
+        padding: 10px 0;
+    }
+
+    #services {
+        padding-top: 135px;
+    }
+
+    #Services-Provided {
+        padding: 20px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .container-content {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .container-content img {
+        display: block;
+        width: 100%;
+        margin: auto; /* Center horizontally */
+        max-width: 400px;
+        height: auto;
+    }
+
+    .container-content ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .container-content ul li {
+        margin-bottom: 10px;
+    }
+
+    .container-content:nth-child(1) {
+        flex: 0 0 50%; /* Image takes 50% of the space */
+    }
+
+    .container-content:nth-child(2),
+    .container-content:nth-child(3) {
+        flex: 0 0 25%; /* Other sections take 25% each */
+    }
+
+    #gallery {
+        padding-top: 135px;
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 8px;
+    }
+
+    .gallery img {
+        flex: 1 1 auto;
+        width: 30%; /* Adjust based on your preference */
+        margin: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Optional: Adds shadow for depth */
+        border-radius: 4px; /* Optional: Rounds the corners */
+    }
+
+    #footer {
+        background-color: #1b1e2d;
+        color: #ffffff;
+        align-items: center;
+    }
+    #top-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1b1e2d;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+    }
+    #logo-footer {
+        width: 250px;
+        height: auto;
+    }
+    #socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+    #socials a {
+        color: #ffffff;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+    #socials img {
+        width: 75px;
+        height: auto;
+    }
+    #office-hours {
+        margin-top: 20px;
+    }
+    table {
+        width: 100%;
+        color: #5FB5E4;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: left;
+    }
+    .day {
+        font-weight: bold;
+    }
+    .time {
+        text-align: right;
+    }
+    #bottom-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1b1e2d;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+    }
+    #footer-data {
+        text-align: center;
+        color: #5FB5E4;
+    }
+    #email {
+        color: #5FB5E4;
+        text-decoration: none;
+    }
+    #copy {
+        background-color: #1b1e2d;
+        color: #5FB5E4;
+        text-align: center;
+        padding: 0;
+        margin:0;
+        text-decoration: none;
+    }
+</style>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        let slides = document.querySelectorAll('.slide');
+        let index = 0;
+        const showSlide = (i) => {
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[i].style.display = 'block';
+        };
+
+        document.querySelector('.next').addEventListener('click', () => {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        });
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        });
+
+        showSlide(index); // Show the first slide
+    });
+</script>
